@@ -1,0 +1,12 @@
+The privilege-escalation technique used here was found and published by
+FcoMGX on the SamyGO forum, thread 14664:
+
+  https://forum.samygo.tv/viewtopic.php?t=14664
+
+This repository adds a portable carrier builder, a proof-only mode that
+writes an evidence log, a batched root runner, and the operational notes
+gathered while using it on one retail set.
+
+SVE-2025-50109 (Bishop Fox), the filename injection through `sdb install`,
+is a related but different bug. It yields uid 901(sdk) on newer Tizen
+builds; this one runs through `vd_appinstall` and yields root.
